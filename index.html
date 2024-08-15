@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+        }
+        .container{
+            background-image: url('https://wallpapers.com/images/hd/back-view-of-hacker-working-3d-hyd898gylso29zhg.jpg');
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .form{
+            backdrop-filter: blur(10px);
+            width: 40%;
+            border: 1px solid gray;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 10px;
+            animation: myAnim 3s infinite alternate forwards;
+            box-shadow: 2px -3px 84px 7px rgba(255, 2, 2, 0.54);
+        }
+        @keyframes myAnim {
+            0%,100%{
+                    transform: translatey(0px);
+                    box-shadow: 2px -3px 84px 7px rgba(104, 220, 213, 0.54);
+-webkit-box-shadow: 2px -3px 84px 7px rgba(69, 125, 209, 0.54);
+-moz-box-shadow: 2px -3px 84px 7px rgba(76, 128, 217, 0.54);
+            }
+            50%{
+                    transform: translatey(20px);
+                    box-shadow: 2px -3px 84px 7px rgba(65,27,27,0.54);
+-webkit-box-shadow: 2px -3px 84px 7px rgba(215, 31, 139, 0.54);
+-moz-box-shadow: 2px -3px 84px 7px rgba(233, 37, 135, 0.54);
+            }
+            
+        }
+        .fo{
+            text-align: center;
+        }
+        .inp{
+            width: 400px;
+            height: 30px;
+            margin: 10px 0px;
+            border-radius: 10px;
+            border: 1px solid gray;
+        }
+        button{
+            padding: 4px 10px;
+            font-size: 20px;
+            color: white;
+            background-color: black;
+            border-radius: 10px;
+        }
+        img{
+            margin: 10px 0px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="form">
+           <div class="fo">
+            <input type="text" placeholder="Please enter input for qr scanner" id="inp" class="inp"> <br>
+            <button type="submit" id="button">Generate QR</button>
+        </div>
+        <img src="" alt="" id="img">
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
