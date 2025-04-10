@@ -6,7 +6,7 @@ qrbtn.addEventListener("click",()=>{
     const inputvalue = qrinp.value
     console.log(inputvalue)
     if(!inputvalue){
-        alert("please enter yout input")
+        alert("please enter your input")
         return;
     }else{
         image.src = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${inputvalue}`
